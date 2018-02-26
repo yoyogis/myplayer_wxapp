@@ -1,0 +1,12 @@
+<view>
+  <button bindtap="play">{{isPlaying?'暂停':'播放'}}</button>
+  <text>正在播放：{{playing.name}}</text>
+  <view class='imageControl'>
+    <button bindtap="preImage">上一页</button>
+    <button bindtap="nextImage">下一页</button>
+  </view>
+  <scroll-view>
+    <image wx:if="{{imageIndex!=-1}}" style="background-color: #eeeeee;height:{{imageHight}}px" mode="widthFix" 
+    src="{{imageUrl}}{{playing.md5}}/{{playing.images[imageIndex]}}" bindload="imageLoaded"></image>
+  </scroll-view>
+</view>

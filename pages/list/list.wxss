@@ -1,0 +1,17 @@
+/* list.wxss */
+.content{
+  margin: 3px;
+}
+
+.audio{
+  width:95%;
+}
+
+.selected{
+  color: red;
+}
+
+.item text{
+  font-size:15px;
+  line-height:25px;
+}

@@ -1,0 +1,9 @@
+<view class="content">
+
+<view>
+<view bindtap="bindPlay" data-info="{{item}}"  class="item {{item.md5==playing.md5?'selected':''}}"  wx:for="{{playlist}}">
+  <text data-info="{{item}}">{{item.fileName}}</text>
+</view>
+</view>
+
+</view>

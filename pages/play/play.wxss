@@ -1,0 +1,5 @@
+/* pages/play/play.wxss */
+.imageControl button{
+  width:50%;
+  display:inline-block;
+}
